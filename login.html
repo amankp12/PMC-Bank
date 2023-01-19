@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>PMC Bank</title>
+        <link href="assets/css/loginCSS.css" rel="stylesheet">
+    </head>
+
+    <body onload="load();">
+        <form method="POST">
+            <fieldset>
+                <legend>Login</legend>
+                <input type="email" placeholder="Enter your Email Address:" id="email"><br />
+                <p>OR</p>
+                <input type="text" placeholder="Enter your Account Number:" id="accno"><br />
+                <input type="password" accept="number" placeholder="Enter your Password:" id="password"
+                    onblur="return validForm();"><br />
+                <p id="result"></p>
+                <button type="button" id="loginbtn" value="0" onclick="goto();"><a href="customers.html">Login</a></button>
+                <button type="reset" id="resetbtn">Reset</button>
+            </fieldset>
+        </form>
+    </body>
+
+</html>
